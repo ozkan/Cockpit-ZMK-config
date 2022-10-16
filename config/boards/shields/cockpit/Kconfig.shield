@@ -1,0 +1,2 @@
+config SHIELD_COCKPIT
+    def_bool $(shields_list_contains,cockpit)

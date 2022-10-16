@@ -1,0 +1,8 @@
+file_format: "1"
+id: cockpit
+name: COCKPIT
+type: shield
+url: https://github.com/ozkan/Cockpit-Keyboard
+requires: [pro_micro]
+features:
+  - keys
