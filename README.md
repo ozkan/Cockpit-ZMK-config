@@ -9,7 +9,7 @@
 ### Build firmware
 
 - Push a commit to trigger the build.
-- [Download](https://github.com/ozkan/Cockpit-ZMK-config/actions) the artifact. 
+- Download the artifact. 
 
 ## Flash firmware
 - Press RESET twice within 500ms.   
