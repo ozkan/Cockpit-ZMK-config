@@ -1,9 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
-
-
-
-
 / {
     chosen {
         zmk,kscan = &kscan0;
@@ -16,8 +12,7 @@
         label = "LEFT_ENCODER";
         a-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <4>;
-        status = "okay";
+        steps = <80>;
     };
 
     right_encoder: encoder_right {
@@ -25,14 +20,14 @@
             label = "RIGHT_ENCODER";
             a-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
             b-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-            resolution = <4>;
-            status = "okay";
+            steps = <80>;
         };
 
 
     sensors {
             compatible = "zmk,keymap-sensors";
             sensors = <&left_encoder &right_encoder>;
+            triggers-per-rotation = <20>;
         };
 
 
